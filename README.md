@@ -1,7 +1,19 @@
 
 **Table des matières**
+- Présentation
+  - Fonctionalitées
+  - Decodeur TV UHD
+- Installation
+  - Liste des modifications à faire
+  - 1. Trouver le décodeur TV sur le LAN
+  - 2. Modifier dans le fichier configuration.yaml
+  - 3. Créer un fichier yaml contenant les commandes pour le décodeur.
+  - 4. Rajouter une ou plusieurs cartes dans l'interface lovelace
+      -  Télécommande simple
+      -  Liste des chaines simple
+      -  Télécommande nécessitant button-card
 
-[TOC]
+
 # Présentation
 ### Fonctionalitées
 
@@ -39,6 +51,7 @@ Si vous nommer un équipement connecté en "*MonEquipement*" dans l&apos;interfa
 
 ### 3. Créer un fichier yaml contenant les commandes pour le décodeur.
 Créer un fichier nommé "*rest_command.yaml*" dans le répertoire par défault "*config/*" avec "*File Editor*"
+
 	# Pilotage du décodeur TV Orange    
 	tv_off:
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=01&key=116&mode=00'
@@ -70,7 +83,6 @@ Créer un fichier nommé "*rest_command.yaml*" dans le répertoire par défault 
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=01&key=164&mode=00'
 	tv_programme_moins:
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=01&key=403&mode=00'
-	    
 	tv_rewind:
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=01&key=168&mode=00'
 	tv_fastforward:
@@ -347,6 +359,7 @@ On peut alors faire une copie du texte fourni ici à la palce de " *type: ''* ".
 	type: vertical-stack
 
 ####Liste des chaines simple
+
 	cards:
 	  - cards:
 	      - hold_action:
