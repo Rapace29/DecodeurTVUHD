@@ -89,7 +89,6 @@ Créer un fichier nommé "*rest_command.yaml*" dans le répertoire par défault 
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=01&key=159&mode=00'
 	tv_record:
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=01&key=167&mode=00'    
-	    
 	tv_one_more_think:    
 	    url: 'http://pcmltvwhd94.home:8080/remoteControl/cmd?operation=10' 
 	tv_tf1:
