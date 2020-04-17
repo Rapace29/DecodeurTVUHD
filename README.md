@@ -357,7 +357,7 @@ On peut alors faire une copie du texte fourni ici à la palce de " *type: ''* ".
 	    type: horizontal-stack
 	type: vertical-stack
 
-####Liste des chaines simple
+#### Liste des chaines simple
 
 	cards:
 	  - cards:
